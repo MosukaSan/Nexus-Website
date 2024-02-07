@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    background-color: rgb(3, 1, 8);
+
+}
+header{
+    background-color: rgb(9, 5, 24);
+    text-align: center;
+    color: rgb(151, 51, 126);
+    padding: 10px;
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 999;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+main{
+    position: relative;
+}
+
+.bg-image {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 100%; /* Largura desejada */
+    height: 100vh; /* Altura desejada */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as dimensões do contêiner */
+}
+
+.bg-image img {
+    width: 100%; /* Garante que a imagem preencha todo o contêiner */
+    height: 100%; /* Mantém a proporção original da imagem */
+    object-fit: cover; /* Faz com que a imagem preencha o contêiner, cortando partes que excedem */
+    opacity: 0.26;
+    display: block;
+}
+
+.content {
+    position: absolute;
+    top: 50%; /* Ajusta o topo do conteúdo para metade da altura do contêiner pai */
+    left: 50%; /* Ajusta a esquerda do conteúdo para metade da largura do contêiner pai */
+    transform: translate(-50%, -50%); /* Centraliza o conteúdo */
+    text-align: center; /* Alinha o texto ao centro */
+    color: #fff; /* Cor do texto */
+}
+
+.content h1{
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    font-size: 60px;
+}
+
+ .content img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid rgb(139, 31, 125);
+    margin-bottom: 50px; /* Espaçamento inferior da imagem */
+ }
+
+ .content #add-button{
+    background-color: rgb(139, 31, 125); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    border-radius: 5px; /* Borda arredondada */
+    width: 250px;
+    height: 55px;
+    font-weight: 600;
+    font-size: 25px;
+ }
+
+ #add-button:hover{
+    background-color: rgb(92, 21, 82); /* Cor de fundo mais escura */
+ }
