@@ -1,3 +1,12 @@
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .bg-image {
     position: relative;
     display: flex;
@@ -28,6 +37,7 @@
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     font-size: 7vh;
     margin-bottom: 8vh;
+    animation: fadeAnimation 1.5s ease
 }
 
  .content img {
@@ -36,6 +46,7 @@
     border-radius: 50%;
     border: 5px solid rgb(139, 31, 125);
     margin-bottom: 8vh; /* Espaçamento inferior da imagem */
+    animation: fadeAnimation 1.5s ease
  }
 
  .content #add-button{
@@ -50,6 +61,7 @@
     font-weight: 600;
     font-size: 3vh;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeAnimation 1.5s ease
  }
 
  #add-button:hover{
