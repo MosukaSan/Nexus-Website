@@ -1,5 +1,5 @@
 # Nexus Website 📑
-- A website for my bot Nexus
+- A website for my discord bot Nexus
 - Under Development
 
 # URL 🔗
